@@ -360,7 +360,7 @@
     .flyer-download {
       max-width: none;
       margin-bottom: 48px;
-      padding: 0;
+      padding: 20px 24px;
       border: 1px solid var(--rule);
     }
 
@@ -369,8 +369,7 @@
       font-size: 0.72rem;
       font-weight: 700;
       letter-spacing: 0.06em;
-      margin-bottom: 0;
-      padding: 16px 20px;
+      margin-bottom: 6px;
     }
 
     .flyer-placeholder {
@@ -380,14 +379,16 @@
     }
 
     .flyer-download a {
-  display: block;
-  padding: 12px 20px;
-  font-family: var(--sans);
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--ink);
-  text-decoration: underline;
-  text-underline-offset: 3px;
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .flyer-download .image-grid.triple .work-img:last-child {
+  flex-grow: 1;
+  object-fit: cover;
 }
     /* ── PROFILE ── */
     .profile-section {
@@ -487,7 +488,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 0;
+  gap: 6px;
   overflow-x: visible;
 }
 
@@ -495,7 +496,6 @@
   height: 260px;
   width: auto;
   flex-shrink: 0;
-  display: block;
 }
 
   </style>
