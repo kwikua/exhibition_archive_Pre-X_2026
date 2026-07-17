@@ -385,7 +385,20 @@
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-    .flyer-download .image-grid.triple .work-img:last-child {
+    .flyer-download .image-grid.triple {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.flyer-download .image-grid.triple .work-img {
+  height: 260px;
+  width: auto;
+  aspect-ratio: unset;
+  object-fit: contain;
+  flex-shrink: 0;
+} {
   flex-grow: 0;
   width: auto;
   object-fit: contain;
