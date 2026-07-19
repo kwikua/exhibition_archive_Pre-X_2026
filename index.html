@@ -355,14 +355,11 @@
       padding-top: 154px;
     }
 
-
-
     .flyer-download {
       max-width: none;
       margin-bottom: 48px;
-      
     }
-
+ 
     .flyer-label {
       font-family: var(--sans);
       font-size: 0.72rem;
@@ -370,13 +367,13 @@
       letter-spacing: 0.06em;
       margin-bottom: 6px;
     }
-
+ 
     .flyer-placeholder {
       font-family: var(--sans);
       font-size: 0.68rem;
       color: var(--ink-light);
     }
-
+ 
     .flyer-download a {
       font-family: var(--sans);
       font-size: 0.78rem;
@@ -385,51 +382,50 @@
       text-decoration: underline;
       text-underline-offset: 3px;
     }
+ 
     .flyer-download .image-grid.triple {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 6px;
-  overflow-x: visible;
-  margin-bottom: 12px;
-}
-
-.flyer-download .image-grid.triple .work-img {
-  height: 260px;
-  width: auto;
-  aspect-ratio: unset;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.poster-caption {
-  font-family: var(--sans);
-  font-size: 0.68rem;
-  line-height: 1.9;
-  color: var(--ink-light);
-  max-width: 640px;
-  margin-top: 6px;
-}
-
-.flyer-download .image-grid.quad {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
-  margin-bottom: 14px;
-}
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 6px;
+      overflow-x: visible;
+      margin-bottom: 12px;
+    }
  
-.flyer-download .image-grid.quad .work-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+    .flyer-download .image-grid.triple .work-img {
+      height: 260px;
+      width: auto;
+      aspect-ratio: unset;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
  
-@media (max-width: 600px) {
-  .flyer-download .image-grid.quad {
-    grid-template-columns: 1fr 1fr;
-{ 
-  flex-grow: 0; width: auto; object-fit: contain;     
-}
+    .poster-caption {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      line-height: 1.9;
+      color: var(--ink-light);
+      max-width: 640px;
+      margin-top: 6px;
+    }
+ 
+    .flyer-download .image-grid.quad {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 6px;
+      overflow-x: visible;
+      margin-bottom: 12px;
+    }
+ 
+    .flyer-download .image-grid.quad .work-img {
+      height: 195px;
+      width: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+ 
     /* ── PROFILE ── */
     .profile-section {
       display: grid;
@@ -441,7 +437,7 @@
       padding-top: 28px;
       border-top: 1px solid var(--rule);
     }
-
+ 
     .profile-img {
       width: 140px;
       height: 140px;
@@ -449,7 +445,7 @@
       object-position: top center;
       display: block;
     }
-
+ 
     .profile-text {
       font-size: 0.72rem;
       line-height: 2.05;
