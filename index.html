@@ -410,10 +410,24 @@
   max-width: 640px;
   margin-top: 6px;
 }
-{
-  flex-grow: 0;
-  width: auto;
-  object-fit: contain;
+
+.flyer-download .image-grid.quad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-bottom: 14px;
+}
+ 
+.flyer-download .image-grid.quad .work-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+ 
+@media (max-width: 600px) {
+  .flyer-download .image-grid.quad {
+    grid-template-columns: 1fr 1fr;
+
 }
     /* ── PROFILE ── */
     .profile-section {
