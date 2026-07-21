@@ -387,22 +387,27 @@
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-　　 .flyer-download .flyer-covers {
-      display: flex;
-      flex-direction: row;
-      gap: 0;
+    .flyer-download .flyer-set {
+      max-width: 340px;
       margin-bottom: 12px;
     }
  
+    .flyer-download .flyer-covers {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+    }
+ 
     .flyer-download .flyer-covers .work-img {
-      height: 220px;
-      width: auto;
+      width: 50%;
+      height: auto;
       object-fit: contain;
+      display: block;
       flex-shrink: 0;
     }
  
     .flyer-download .flyer-spread {
-      margin-bottom: 12px;
+      margin-top: 12px;
     }
  
     .flyer-download .flyer-spread .work-img {
@@ -410,12 +415,6 @@
       height: auto;
       object-fit: contain;
       display: block;
-    }
- 
-    @media (max-width: 600px) {
-    .flyer-download .flyer-covers .work-img {
-      height: auto;
-      width: 50%;
     }
   }
  
@@ -1064,13 +1063,14 @@
   <div class="flyer-download" id="flyer">
     <p class="flyer-label">展覧会ﾌﾗｲﾔｰ</p>
  
-    <div class="flyer-covers">
-      <img src="flyer_p1+.png" alt="" class="work-img">
-      <img src="flyer_p3+.png" alt="" class="work-img">
-    </div>
- 
-    <div class="flyer-spread">
-      <img src="flyer_p2.png" alt="" class="work-img">
+    <div class="flyer-set">
+      <div class="flyer-covers">
+        <img src="flyer_p1+.png" alt="" class="work-img">
+        <img src="flyer_p3+.png" alt="" class="work-img">
+      </div>
+      <div class="flyer-spread">
+        <img src="flyer_p2.png" alt="" class="work-img">
+      </div>
     </div>
  
     <a href="flyer.pdf" target="_blank">PDFを開く</a>
