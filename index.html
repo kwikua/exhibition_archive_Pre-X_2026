@@ -418,18 +418,23 @@
       height: auto;
       object-fit: contain;
       display: block;
-      flex-shrink: 0;
     }
  
-    .flyer-download .flyer-spread {
-      margin-top: 12px;
+    .flyer-download .flyer-photos {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 24px;
+      overflow-x: visible;
+      margin: 20px 0 24px;
     }
  
-    .flyer-download .flyer-spread .work-img {
-      width: 100%;
-      height: auto;
+    .flyer-download .flyer-photos .work-img {
+      height: 200px;
+      width: auto;
       object-fit: contain;
-      display: block;
+      flex-shrink: 0;
     }
  
     .poster-caption {
@@ -1097,7 +1102,13 @@
         <img src="flyer_p2.png" alt="" class="work-img">
       </div>
     </div>
- 
+
+    <div class="flyer-photos">
+      <img src="flyer_scene01.jpg" alt="" class="work-img">
+      <img src="flyer_scene02.jpg" alt="" class="work-img">
+      <img src="flyer_scene03.jpg" alt="" class="work-img">
+    </div>
+    
     <a href="flyer.pdf" target="_blank">PDFを開く</a>
 
     <p class="flyer-label" style="margin-top:40px;">展覧会ﾎﾟｽﾀｰ</p>
