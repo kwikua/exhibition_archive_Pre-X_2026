@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kwikua.github.io/exhibition_archive_Pre-X_2026/sitemap.xml
